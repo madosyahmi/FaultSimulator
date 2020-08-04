@@ -105,9 +105,9 @@ void faultsim(int (*signal_line)[6],unsigned char **fault_list,int line_no,unsig
                             }
                         }
                     }
-                }else{ /
+                }else{ 
                     for(i=0;i<now_cal_i;i++){
-                        ////AND - all 1
+                        //AND - all 1
                         fault_list[line_no-1][cal_no[i]-1] = ~fault_list[line_no-1][cal_no[i]-1];
                     }
                     for(i=0;i<signal_line[line_no-1][1];i++){
